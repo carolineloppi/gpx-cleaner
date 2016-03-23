@@ -2,9 +2,11 @@ package modelo;
 
 import java.util.ArrayList;
 import java.util.List;
+import lombok.Getter;
+import lombok.Setter;
 
 public class Trilha {
-    private String nome;
+    private @Getter @Setter String nome;
     private List<Segmento> segmentos;
     
     public Trilha(String nome){
@@ -14,14 +16,6 @@ public class Trilha {
     
     public Trilha(){
         this("");
-    }
-    
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
     }
     
     public int contaSegmentos(){

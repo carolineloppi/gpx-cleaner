@@ -2,8 +2,12 @@ package modelo;
 import java.util.ArrayList;
 import java.util.List;
 
+import lombok.Getter;
+
 
 public class Segmento {
+     /*Para este caso não seria útil usar o Lombok. 
+       Descobrir se é possível alterar tipo de retorno*/
     private List<Ponto> pontos;
     
     public Segmento(){
@@ -30,8 +34,8 @@ public class Segmento {
         pontos.remove(indice);
     }
     
-    public Iterable<Ponto> getPontos(){
-        return pontos;
-    }   
+//    public Iterable<Ponto> getPontos(){
+//        return pontos;
+//    }   
 
 }
